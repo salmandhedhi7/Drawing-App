@@ -120,7 +120,7 @@ clearCanvas.addEventListener("click", () => {
 
 saveImg.addEventListener("click", () => {
     const link = document.createElement("a"); //create <a> element
-    link.download = `${Data.now()}.jpg`; //passing current data as link download value 
+    link.download = `${Date.now()}.jpg`; //passing current data as link download value 
     link.href = canvas.toDataURL(); //passing canvasData as link href value
     link.click();// clicking link to download image
 });
