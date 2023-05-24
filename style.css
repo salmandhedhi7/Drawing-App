@@ -28,6 +28,7 @@ section{
 }
 .tools-board .row{
     margin-bottom: 20px;
+    color: darkred;
 }
 .row .options{
     list-style: none;
@@ -43,12 +44,12 @@ section{
     filter: invert(17%) sepia(90%) saturate(3000%) brightness(100%) contrast(100%) hue-rotate(900deg);
 }
 .option :where(span,label){
-    color: #5a6168;
+    color: #000;
     cursor: pointer;
     padding-left: 10px;
 }
 .option:is(:hover, .active) :where(span, label){
-    color: #c885ff;
+    color: #4a98f7;
 }
 .option #fill-color{
     cursor: pointer;
@@ -77,7 +78,7 @@ section{
 }
 .colors .option:nth-child(1){
     background-color: rgb(255, 170, 12);
-    /* border: 1px solid #bfbfbf; */
+    border: 1px solid #bfbfbf;
 }
 .colors .option:nth-child(2){
     background-color: #000;
