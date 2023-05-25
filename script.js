@@ -128,15 +128,12 @@ canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => isDrawing = false);
 
-// Touch events for mobile devices
-canvas.addEventListener("touchstart", (e) => {
-    e.preventDefault();
-    startDraw(e.touches[0]);
-  });
-  
-  canvas.addEventListener("touchmove", (e) => {
-    e.preventDefault();
-    drawing(e.touches[0]);
-  });
-  
-  canvas.addEventListener("touchend", () => isDrawing = false);
+canvas.addEventListener("touchstart",function(event) {
+
+    event.preventDefault();
+    isDrawing = true;
+    let coordinates =
+getCoordinates(event.touches[0]);
+    prevMouseX = coordinates.x;
+    prevMouseY = coordinates.y;
+});
