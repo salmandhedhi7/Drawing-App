@@ -154,24 +154,24 @@ section{
 }
 
 
-/* Styles for desktop/laptop */
+/* Styles for desktop/laptop
 /* You can customize the max-width value according to your needs */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) { */
     /* Add your desktop/laptop specific styles here */
     /* For example: */
-    canvas {
-      width: 500px;
-      height: 300px;
-    }
-  }
+    /* canvas { */
+      /* width: 500px; */
+      /* height: 300px; */
+    /* } */
+  /* } */
   
   /* Styles for mobile devices */
   /* You can customize the max-width value according to your needs */
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) { */
     /* Add your mobile specific styles here */
     /* For example: */
-    canvas {
-      width: 100%;
-      height: 200px;
-    }
-  }
+    /* canvas { */
+      /* width: 100%; */
+      /* height: 200px; */
+    /* } */
+  /* }  */
